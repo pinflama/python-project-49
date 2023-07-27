@@ -1,1 +1,3 @@
 .venv
+brain_games/scripts/__pycache__/
+poetry.lock
