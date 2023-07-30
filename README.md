@@ -3,7 +3,7 @@ ___
 
 The training project "Brain Games" on the Python Development course on [Hexlet.io](https://ru.hexlet.io/programs/python).
 [![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions) 
-[![Maintainability](https://api.codeclimate.com/v1/badges/84b4a56a97af7dbc636a/maintainability)](https://codeclimate.com/github/pinflama/python-project-49/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/33124f64ec0e3a66e63d/maintainability)](https://codeclimate.com/github/pinflama/python-project-49/maintainability)
 
 ### Built With
 Languages, frameworks and libraries used in the implementation of the project:
@@ -55,6 +55,7 @@ have some real development experience.
   * [Python](#python)
   * [Poetry](#poetry)
   * [Project package](#project-package)
+  * [Install package](#install-package)
 * [Usage](#usage)
   * [Demo](#demo)
   * [Brain Even](#video_game-brain-even)
@@ -147,7 +148,7 @@ Once Poetry is installed and in your $PATH, you can execute the following:
 >> poetry --version
 ```
 ### Project package
-
+'project-package'
 To work with the package, you need to clone the repository to your computer. This is done using the ```git clone``` command. Clone the project on the command line:
 
 ```bash
@@ -170,7 +171,6 @@ It remains to move to the directory and install the package:
 ```
 
 On *nix-like systems you can do this:
-
 
 [![asciicast](https://asciinema.org/a/OqcyAI9QrbWw759KCtN69sdt8.svg)](https://asciinema.org/a/OqcyAI9QrbWw759KCtN69sdt8)
 
@@ -199,7 +199,6 @@ Correct!
 
 [![asciicast](https://asciinema.org/a/ftQWlXcGsh6ojTkrlAbngy74h.svg)](https://asciinema.org/a/ftQWlXcGsh6ojTkrlAbngy74h)
 
-
 #### Brain Calc
 
 The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
@@ -218,7 +217,6 @@ Correct!
 ```
 
 [![asciicast](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo.svg)](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo)
-
 
 #### Brain Gcd
 
@@ -239,7 +237,6 @@ Correct!
 
 [![asciicast](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq.svg)](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq)
 
-
 #### Brain Progression
 
 The user is shown a series of numbers with a missing number, forming an arithmetic progression. The player has to determine this number.
@@ -259,9 +256,7 @@ Correct!
 
 [![asciicast](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb.svg)](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb)
 
-
 #### Brain Prime
-[![asciicast](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN.svg)](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN)
 
 The user is shown a random number. And he needs to answer yes if the number is prime, or no if it is composite:
 
@@ -277,6 +272,8 @@ Question: 67
 >> Your answer: yes
 Correct!
 ```
+
+[![asciicast](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN.svg)](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN)
 
 ## Development
 
@@ -333,8 +330,3 @@ The commands most used in development are listed in the Makefile:
 </dl>
 
 ___
-
-**Thank you for attention!**
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions)
