@@ -18,5 +18,10 @@ ___
 [![asciicast](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo.svg)](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo)
 
 
+#### Brain Gcd
+
+[![asciicast](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq.svg)](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions)
