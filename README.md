@@ -58,11 +58,11 @@ have some real development experience.
   * [Install package](#install-package)
 * [Usage](#usage)
   * [Demo](#demo)
-  * [Brain Even](#video_game-brain-even)
-  * [Brain Calculator](#video_game-brain-calc)
-  * [Brain GCD](#video_game-brain-gcd)
-  * [Brain Progression](#video_game-brain-progression)
-  * [Brain Prime](#video_game-brain-prime)
+  * [Brain Even](#brain-even)
+  * [Brain Calculator](#brain-calc)
+  * [Brain GCD](#brain-gcd)
+  * [Brain Progression](#brain-progression)
+  * [Brain Prime](#brain-prime)
 * [Development](#development)
   * [Dev Dependencies](#dev-dependencies)
   * [Project Organization](#project-organization)
@@ -148,7 +148,7 @@ Once Poetry is installed and in your $PATH, you can execute the following:
 >> poetry --version
 ```
 ### Project package
-'project-package'
+
 To work with the package, you need to clone the repository to your computer. This is done using the ```git clone``` command. Clone the project on the command line:
 
 ```bash
