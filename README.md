@@ -28,5 +28,9 @@ ___
 [![asciicast](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb.svg)](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb)
 
 
+#### Brain Prime
+[![asciicast](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN.svg)](https://asciinema.org/a/pHhktdXh8CmU9jTAtBH9JWeiN)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions)
