@@ -12,5 +12,11 @@ ___
 
 [![asciicast](https://asciinema.org/a/ftQWlXcGsh6ojTkrlAbngy74h.svg)](https://asciinema.org/a/ftQWlXcGsh6ojTkrlAbngy74h)
 
+
+#### Brain Calc
+
+[![asciicast](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo.svg)](https://asciinema.org/a/pDN8gzRB66peFXYYk36Hg6Wqo)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions)
