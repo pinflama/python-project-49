@@ -23,5 +23,10 @@ ___
 [![asciicast](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq.svg)](https://asciinema.org/a/V78CYAv7etJkOZphtrZvqrfZq)
 
 
+#### Brain Progression
+
+[![asciicast](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb.svg)](https://asciinema.org/a/wtoJGtHP8mOZAcAU2PjesjBeb)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pinflama/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pinflama/python-project-49/actions)
