@@ -2,6 +2,7 @@ from typing import NoReturn
 
 import prompt
 
+
 GAME_ATTEMPTS = 3
 WELCOME_MESSAGE = 'Welcome to the Brain Games!'
 HELLO_MESSAGE = 'Hello, {}!'
@@ -12,18 +13,18 @@ Let\'s try again, {}!'''
 VICTORY_GAME_MESSAGE = 'Congratulations, {}!'
 
 
-def run_game(game_rules: str, generate_game_data: tuple) -> NoReturn:
+def run_game(game) -> NoReturn:
     # Приветствуем пользователя
     print(WELCOME_MESSAGE)
     name = prompt.string(ASK_NAME_MESSAGE)
     print(HELLO_MESSAGE.format(name))
 
     # Выводим правила игры, формируем логику игры и генерируем цикл раундов
-    print(game_rules)
+    print(game.GAME_RULES)
     game_round = 1
 
     while game_round <= GAME_ATTEMPTS:
-        computer_question, target_result = generate_game_data()
+        computer_question, target_result = game.generate_game_data()
         print(f'Question: {computer_question}')
         user_answer = prompt.string('Your answer: ')
 
