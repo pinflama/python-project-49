@@ -22,8 +22,11 @@ def run_game(game) -> NoReturn:
 
         if str(target_result) != user_answer.lower():
             # Исполняется, если последний введенный ответ - неправильный
-            print('''\'{}\' is wrong answer ;(. Correct answer was \'{}\'. Let\'s try again, {}!'''
-            .format(user_answer, target_result, name))
+            print(
+                f"'{user_answer}' is wrong answer ;(.",
+                f"Correct answer was '{target_result}'.",
+            )
+            print(f"Let's try again, {name}!")
             break
         
         else:
