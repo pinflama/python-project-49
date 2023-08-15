@@ -15,7 +15,6 @@ def generate_progression():
     PROGRESSION_LENGTH_VALUE_MIN = 5
     PROGRESSION_LENGTH_VALUE_MAX = 10
 
-
     start_value = randint(
         PROGRESSION_START_VALUE_MIN, PROGRESSION_START_VALUE_MAX
     )
@@ -36,6 +35,7 @@ def generate_progression():
     for i in range(start_value, progression_max_value, step_value):
         progression.append(str(i))
     return progression, length_value
+
 
 def generate_game_data() -> tuple:
 
