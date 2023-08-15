@@ -1,6 +1,6 @@
 import math
 from random import randint
-from typing import Callable
+
 
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
 

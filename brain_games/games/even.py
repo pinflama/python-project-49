@@ -1,5 +1,5 @@
 from random import randint
-from typing import Callable
+
 
 GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
@@ -9,7 +9,7 @@ MAX_RANDOM_NUMBER = 100
 
 def is_even(random_number: int) -> tuple:
 
-    return True if random_number % 2 == 0 else False
+    return random_number % 2 == 0
 
 
 def generate_game_data() -> tuple:

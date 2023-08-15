@@ -1,5 +1,5 @@
 from random import randint
-from typing import Callable
+
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 

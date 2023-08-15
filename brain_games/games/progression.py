@@ -1,20 +1,21 @@
 from random import randint
-from typing import Callable
+
 
 GAME_RULES = 'What number is missing in the progression?'
 
-PROGRESSION_START_VALUE_MIN = 1
-PROGRESSION_START_VALUE_MAX = 50
 
-PROGRESSION_STEP_VALUE_MIN = 3
-PROGRESSION_STEP_VALUE_MAX = 30
+def generate_progression():
 
-PROGRESSION_LENGTH_VALUE_MIN = 5
-PROGRESSION_LENGTH_VALUE_MAX = 10
+    PROGRESSION_START_VALUE_MIN = 1
+    PROGRESSION_START_VALUE_MAX = 50
+
+    PROGRESSION_STEP_VALUE_MIN = 3
+    PROGRESSION_STEP_VALUE_MAX = 30
+
+    PROGRESSION_LENGTH_VALUE_MIN = 5
+    PROGRESSION_LENGTH_VALUE_MAX = 10
 
 
-def generate_game_data() -> tuple:
-    # Генерируем данные и задаем вопрос пользователю
     start_value = randint(
         PROGRESSION_START_VALUE_MIN, PROGRESSION_START_VALUE_MAX
     )
@@ -34,7 +35,12 @@ def generate_game_data() -> tuple:
     progression_max_value = start_value + (length_value * step_value)
     for i in range(start_value, progression_max_value, step_value):
         progression.append(str(i))
+    return progression, length_value
 
+def generate_game_data() -> tuple:
+
+    # Генерируем данные и задаем вопрос пользователю
+    progression, length_value = generate_progression()
     # Определяем отбрасываемое число и заменяем его двумя точками
     index_skip_value = randint(0, length_value - 1)
     target_result = progression[index_skip_value]

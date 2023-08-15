@@ -4,42 +4,29 @@ import prompt
 
 
 GAME_ATTEMPTS = 3
-WELCOME_MESSAGE = 'Welcome to the Brain Games!'
-HELLO_MESSAGE = 'Hello, {}!'
-ASK_NAME_MESSAGE = 'May I have your name? '
-TRUE_ANSWER = 'Correct!'
-FALSE_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
-Let\'s try again, {}!'''
-VICTORY_GAME_MESSAGE = 'Congratulations, {}!'
-
 
 def run_game(game) -> NoReturn:
     # Приветствуем пользователя
-    print(WELCOME_MESSAGE)
-    name = prompt.string(ASK_NAME_MESSAGE)
-    print(HELLO_MESSAGE.format(name))
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print('Hello, {}!'.format(name))
 
     # Выводим правила игры, формируем логику игры и генерируем цикл раундов
     print(game.GAME_RULES)
-    game_round = 1
 
-    while game_round <= GAME_ATTEMPTS:
+    for game_round in range(GAME_ATTEMPTS):
         computer_question, target_result = game.generate_game_data()
         print(f'Question: {computer_question}')
         user_answer = prompt.string('Your answer: ')
 
-        # Узнаем правильность ответа
-        bool_result = str(target_result) == user_answer.lower()
-
-        # ... и в зависимости от выбора ответа вызываем функцию
-        if not bool_result:
+        if str(target_result) != user_answer.lower():
             # Исполняется, если последний введенный ответ - неправильный
-            print(FALSE_ANSWER.format(user_answer, target_result, name))
+            print('''\'{}\' is wrong answer ;(. Correct answer was \'{}\'. Let\'s try again, {}!'''.format(user_answer, target_result, name))
             break
+        
+        else:
+            # Исполняется, если последний введенный ответ - правильный
+            print('Correct!')
 
-        # Исполняется, если последний введенный ответ - правильный
-        print(TRUE_ANSWER)
-        if game_round == GAME_ATTEMPTS:
-            print(VICTORY_GAME_MESSAGE.format(name))
-
-        game_round += 1
+            if game_round == GAME_ATTEMPTS - 1:
+                print('Congratulations, {}!'.format(name))
