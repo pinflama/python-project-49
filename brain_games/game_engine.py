@@ -28,7 +28,7 @@ def run_game(game) -> NoReturn:
             )
             print(f"Let's try again, {name}!")
             break
-        
+
         else:
             # Исполняется, если последний введенный ответ - правильный
             print('Correct!')
