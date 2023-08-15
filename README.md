@@ -9,7 +9,7 @@ The training project "Brain Games" on the Python Development course on [Hexlet.i
 Languages, frameworks and libraries used in the implementation of the project:
 
 [![](https://img.shields.io/badge/language-python-blue)](https://github.com/topics/python) [![](https://img.shields.io/badge/library-prompt-%23EE7D0D)](https://github.com/topics/prompt) 
-[![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math) [![](https://img.shields.io/badge/library-operator)](https://github.com/topics/operator)
+[![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math)
 
 ### Dependencies
 List of dependencies, without which the project code will not work correctly:
