@@ -9,7 +9,7 @@ The training project "Brain Games" on the Python Development course on [Hexlet.i
 Languages, frameworks and libraries used in the implementation of the project:
 
 [![](https://img.shields.io/badge/language-python-blue)](https://github.com/topics/python) [![](https://img.shields.io/badge/library-prompt-%23EE7D0D)](https://github.com/topics/prompt) 
-[![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math)
+[![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math) [![](https://img.shields.io/badge/library-operator)](https://github.com/topics/operator)
 
 ### Dependencies
 List of dependencies, without which the project code will not work correctly:
@@ -289,24 +289,22 @@ List of dev-dependencies:
 ├── brain_games
 │   ├── __init__.py
 │   ├── cli.py
-│   ├── engine
-│   │   ├── __init__.py
-│   │   └── game_engine.py
+│   ├── game_engine.py
 │   ├── games
 │   │   ├── __init__.py
 │   │   ├── calc.py
 │   │   ├── even.py
 │   │   ├── gcd.py
-│   │   ├── progression.py
-│   │   └── prime.py
+│   │   ├── prime.py
+│   │   └── progression.py
 │   └── scripts
 │       ├── __init__.py
-│       ├── brain_games.py
 │       ├── brain_calc.py
 │       ├── brain_even.py
+│       ├── brain_games.py
 │       ├── brain_gcd.py
-│       ├── brain_progression.py
-│       └── brain_prime.py
+│       ├── brain_prime.py
+│       └── brain_progression.py
 ├── Makefile
 ├── poetry.lock
 ├── pyproject.toml

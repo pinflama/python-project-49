@@ -1,12 +1,10 @@
-from typing import NoReturn
-
 import prompt
 
 
 GAME_ATTEMPTS = 3
 
 
-def run_game(game) -> NoReturn:
+def run_game(game):
     # Приветствуем пользователя
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
