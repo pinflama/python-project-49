@@ -37,11 +37,10 @@ def generate_progression():
     return progression, length_value
 
 
-def generate_game_data() -> tuple:
+def generate_game_data():
 
-    # Генерируем данные и задаем вопрос пользователю
     progression, length_value = generate_progression()
-    # Определяем отбрасываемое число и заменяем его двумя точками
+
     index_skip_value = randint(0, length_value - 1)
     target_result = progression[index_skip_value]
     progression[index_skip_value] = '..'
@@ -49,4 +48,4 @@ def generate_game_data() -> tuple:
 
     computer_question = f'{progression}'
 
-    return computer_question, target_result
+    return computer_question, str(target_result)

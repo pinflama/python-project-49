@@ -12,18 +12,18 @@ def is_prime(random_number) -> bool:
     if random_number <= 1:
         return False
 
-    for i in range(2, int(random_number / 2) + 1):
+    for i in range(2, int(random_number ** 0.5 + 1)):
         if random_number % i == 0:
             return False
 
     return True
 
 
-def generate_game_data() -> tuple:
-    # Генерируем данные и задаем вопрос пользователю
+def generate_game_data():
+
     random_number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     computer_question = f'{random_number}'
 
     target_result = 'yes' if is_prime(random_number) else 'no'
 
-    return computer_question, target_result
+    return computer_question, str(target_result)

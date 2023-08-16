@@ -7,17 +7,16 @@ MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
 
-def is_even(random_number: int) -> tuple:
+def is_even(random_number: int):
 
     return random_number % 2 == 0
 
 
-def generate_game_data() -> tuple:
-    # Генерируем данные и задаем вопрос пользователю
+def generate_game_data():
+
     random_number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     computer_question = f'{random_number}'
 
-    # Определяем правильный ответ
     target_result = 'yes' if is_even(random_number) else 'no'
 
-    return computer_question, target_result
+    return computer_question, str(target_result)
