@@ -8,7 +8,7 @@ MAX_RANDOM_NUMBER = 100
 
 
 def generate_game_data():
-    
+
     random_number1 = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     random_number2 = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     operation, func = choice([("+", add), ("-", sub), ("*", mul)])
