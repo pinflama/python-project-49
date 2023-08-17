@@ -52,8 +52,6 @@ have some real development experience.
 ### Summary
 * [Description](#description)
 * [Installation](#installation)
-  * [Python](#python)
-  * [Poetry](#poetry)
   * [Project package](#project-package)
   * [Install package](#install-package)
 * [Usage](#usage)
@@ -71,82 +69,6 @@ have some real development experience.
 ___
 
 ## Installation
-
-### Python
-Before installing the package, you need to make sure that you have Python version 3.11 or higher installed:
-
-```bash
-# Windows, Ubuntu, MacOS:
->> python --version # or python -V
-Python 3.11.0+
-```
-:warning: If a command without a version does not work, specify the Python version explicitly: ```python3 --version```.
-
-If you have an older version installed, update with the following commands:
-
-```bash
-# Windows:
->> pip install python --upgrade
-# Ubuntu:
->> sudo apt-get upgrade python3.X
-# MacOS:
->> brew update && brew upgrade python
-# * X - version number to be installed
-```
-
-If you don't have Python installed, you can download and install it from [the official Python website](https://www.python.org/downloads/). If you are an Ubuntu or MacOS user, then it is better to do 
-this procedure through package managers. Open a terminal and run the command for your operating system:
-
-```bash
-# Ubuntu:
->> sudo apt update
->> sudo apt install python3.X
-# MacOS:
-# https://brew.sh/index_ru.html
->> brew install python3.X
-# * X - version number to be installed
-```
-
-:exclamation: The configuration of assemblies of different versions of operating systems can vary greatly from each other, which makes it impossible to write a common instruction. If you're running 
-an OS other than the above, or you're having errors after the suggested commands, search [Stack Overflow](https://stackoverflow.com/) for answers, maybe someone else has come across them before you! 
-Setting up the environment is not easy! :slightly_smiling_face:
-
-### Poetry
-
-The project uses the Poetry manager. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage 
-(install/update) them for you. You can read more about this tool on [the official Poetry website](https://python-poetry.org/).
-
-Poetry provides a custom installer that will install poetry isolated from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry.
-
-```bash
-# Windows (WSL), Linux, MacOS:
->> curl -sSL https://install.python-poetry.org | python3 -
-# Windows (Powershell):
->> (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
-# If you have installed Python through the Microsoft Store, replace "py" with "python" in the command above.
-```
-
-:warning: On some systems, ```python``` may still refer to Python 2 instead of Python 3. The Poetry Team suggests a ```python3``` binary to avoid ambiguity.
-
-:warning: By default, Poetry is installed into a platform and user-specific directory:
-
-* ```~/Library/Application Support/pypoetry``` on *MacOS*.
-* ```~/.local/share/pypoetry``` on *Linux/Unix*.
-* ```%APPDATA%\pypoetry``` on *Windows*.
-
-If you wish to change this, you may define the $POETRY_HOME environment variable:
-
-```bash
->> curl -sSL https://install.python-poetry.org | POETRY_HOME=/etc/poetry python3 -
-```
-
-Add Poetry to your PATH.
-
-Once Poetry is installed and in your $PATH, you can execute the following:
-
-```bash
->> poetry --version
-```
 ### Project package
 
 To work with the package, you need to clone the repository to your computer. This is done using the ```git clone``` command. Clone the project on the command line:

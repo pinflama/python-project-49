@@ -19,4 +19,4 @@ def generate_game_data():
 
     target_result = 'yes' if is_even(random_number) else 'no'
 
-    return computer_question, str(target_result)
+    return computer_question, target_result

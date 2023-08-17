@@ -17,7 +17,6 @@ def run_game(game):
         user_answer = prompt.string('Your answer: ')
 
         if target_result != user_answer.lower():
-            # Исполняется, если последний введенный ответ - неправильный
             print(
                 f"'{user_answer}' is wrong answer ;(.",
                 f"Correct answer was '{target_result}'.",
@@ -26,7 +25,6 @@ def run_game(game):
             break
 
         else:
-            # Исполняется, если последний введенный ответ - правильный
             print('Correct!')
     else:
         print('Congratulations, {}!'.format(name))
