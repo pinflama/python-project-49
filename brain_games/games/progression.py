@@ -14,7 +14,7 @@ PROGRESSION_LENGTH_VALUE_MAX = 10
 
 
 def generate_progression():
-    
+
     start_value = randint(
         PROGRESSION_START_VALUE_MIN, PROGRESSION_START_VALUE_MAX
     )
